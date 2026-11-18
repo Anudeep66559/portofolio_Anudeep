@@ -1,0 +1,21 @@
+{
+  "name": "thatipally-anudeep-portfolio",
+  "version": "1.0.0",
+  "description": "Drawing Set — blueprint portfolio of Thatipally Anudeep (Civil engineer · IIT Hyderabad).",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node build.mjs",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "civil-engineering",
+    "blueprint",
+    "iit-hyderabad"
+  ],
+  "author": "Thatipally Anudeep",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

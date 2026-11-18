@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thatipally Anudeep — Drawing Set S-01 / S-06</title>
+<meta name="description" content="Civil engineer · IIT Hyderabad. Structural design, sustainable materials, digital fabrication and computation — drafted, analysed, built." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=host-grotesk@300,400,500,600,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="blueprint"></div>
+
+<!-- ===== LOADER (circular scope-dial) ===== -->
+<div id="loader">
+  <div class="loader-kick">Drawing Set · 2026</div>
+  <div class="loader-name">Thatipally<span class="it">Anudeep</span></div>
+  <div class="loader-dial">
+    <svg class="loader-ring" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="lr-track" cx="60" cy="60" r="46"/>
+      <circle class="lr-prog" id="loaderProg" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/>
+      <g class="lr-ticks">
+        <line x1="60" y1="8" x2="60" y2="4"/><line x1="86" y1="15" x2="88" y2="11.5"/><line x1="105" y1="34" x2="108.5" y2="32"/><line x1="112" y1="60" x2="116" y2="60"/><line x1="105" y1="86" x2="108.5" y2="88"/><line x1="86" y1="105" x2="88" y2="108.5"/><line x1="60" y1="112" x2="60" y2="116"/><line x1="34" y1="105" x2="32" y2="108.5"/><line x1="15" y1="86" x2="11.5" y2="88"/><line x1="8" y1="60" x2="4" y2="60"/><line x1="15" y1="34" x2="11.5" y2="32"/><line x1="34" y1="15" x2="32" y2="11.5"/>
+      </g>
+      <circle class="lr-dot" cx="60" cy="60" r="2.5"/>
+    </svg>
+    <div class="loader-pct" id="loaderPct">000</div>
+  </div>
+  <div class="loader-status" id="loaderStatus">Initializing</div>
+  <div class="loader-sheets">S-01 — S-06</div>
+</div>
+
+<!-- ===== GUN-SCOPE CURSOR ===== -->
+<div class="scope" id="scope" aria-hidden="true">
+  <div class="scope-cross scope-cross-v" id="scopeCrossV"></div>
+  <div class="scope-cross scope-cross-h" id="scopeCrossH"></div>
+  <div class="scope-ring" id="scopeRing">
+    <div class="scope-tick scope-tick-n"></div>
+    <div class="scope-tick scope-tick-s"></div>
+    <div class="scope-tick scope-tick-e"></div>
+    <div class="scope-tick scope-tick-w"></div>
+  </div>
+  <div class="scope-dot" id="scopeDot"></div>
+</div>
+
+<!-- ===== HUD ===== -->
+<div class="progress-track"><i id="progressFill"></i></div>
+<div class="hud">
+  <div class="brand">T.<b>Anudeep</b> <span class="sep">/</span> Drawing Set</div>
+  <div class="hud-nav" id="hudNav">
+    <button type="button" data-target="s01"><i>S-01</i><span>Title</span></button>
+    <button type="button" data-target="s02"><i>S-02</i><span>Notes</span></button>
+    <button type="button" data-target="s03"><i>S-03</i><span>Mix</span></button>
+    <button type="button" data-target="s04"><i>S-04</i><span>Register</span></button>
+    <button type="button" data-target="s05"><i>S-05</i><span>Legend</span></button>
+    <button type="button" data-target="s06"><i>S-06</i><span>Approvals</span></button>
+  </div>
+  <div class="right">
+    <div class="stat">SCROLL <span id="scrollPct">000%</span></div>
+    <div class="stat">X <span id="coordX">0000</span> · Y <span id="coordY">0000</span></div>
+    <div class="stat">IST <span id="clock">--:--:--</span></div>
+  </div>
+</div>
+
+<!-- ===== Prev / Next arrows ===== -->
+<button class="nav-arrow nav-prev hide" id="navPrev" aria-label="Previous sheet">&#8593;</button>
+<button class="nav-arrow nav-next" id="navNext" aria-label="Next sheet">&#8595;</button>
+
+<main id="main">
+
+<!-- ============================================================
+     S-01 — TITLE SHEET
+     ============================================================ -->
+<section class="sheet" id="s01" data-name="Title">
+  <div class="sheet-head">
+    <div class="sheet-id"><span class="tag">S-01</span><h2>Title <em>Sheet</em></h2></div>
+    <div class="sheet-meta"><b>Issue 2026</b> · Rev A<br/>Scale 1:1 · NTS</div>
+  </div>
+
+  <div class="hero-art" id="heroArt" aria-hidden="true">
+    <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+      <line class="il" x1="0" y1="320" x2="600" y2="320"/>
+      <line class="il" x1="300" y1="320" x2="300" y2="80"/>
+      <line class="il il-thin" x1="266" y1="100" x2="334" y2="100"/>
+      <line class="il il-thin" x1="300" y1="100" x2="60" y2="320"/>
+      <line class="il il-thin" x1="300" y1="112" x2="110" y2="320"/>
+      <line class="il il-thin" x1="300" y1="124" x2="160" y2="320"/>
+      <line class="il il-thin" x1="300" y1="136" x2="210" y2="320"/>
+      <line class="il il-thin" x1="300" y1="148" x2="255" y2="320"/>
+      <line class="il il-thin" x1="300" y1="100" x2="540" y2="320"/>
+      <line class="il il-thin" x1="300" y1="112" x2="490" y2="320"/>
+      <line class="il il-thin" x1="300" y1="124" x2="440" y2="320"/>
+      <line class="il il-thin" x1="300" y1="136" x2="390" y2="320"/>
+      <line class="il il-thin" x1="300" y1="148" x2="345" y2="320"/>
+      <line class="il il-thin" x1="120" y1="320" x2="120" y2="360"/>
+      <line class="il il-thin" x1="480" y1="320" x2="480" y2="360"/>
+      <line class="il il-thin" x1="0" y1="360" x2="600" y2="360"/>
+    </svg>
+  </div>
+
+  <div class="hero">
+    <div class="hero-left">
+      <div class="eyebrow">Civil Engineer · IIT Hyderabad · Class of 2027</div>
+      <h1 class="hero-name hover-underline">
+        <span class="ln"><span>Thatipally</span></span>
+        <span class="ln"><span>Anudeep</span></span>
+      </h1>
+      <div class="hero-role"><b>Structures &amp; Materials</b> · Drafted · Analysed · Built</div>
+      <p class="hero-tag">Aspiring civil engineer at the intersection of <mark>structural design</mark>, <mark>sustainable construction materials</mark> and <mark>digital fabrication</mark> — combining hands-on CAD modelling, computational analysis and field-tested engineering judgement.</p>
+
+      <div class="hero-stats reveal reveal-d4">
+        <div class="hstat"><div class="n" data-count="7.1" data-decimals="1">0</div><div class="l">B.Tech CGPA<br>IIT Hyderabad</div></div>
+        <div class="hstat"><div class="n" data-count="5" data-decimals="0">0</div><div class="l">Engineering<br>Projects</div></div>
+        <div class="hstat"><div class="n" data-count="1" data-decimals="0">0</div><div class="l">Intl. Internship<br>Japan</div></div>
+        <div class="hstat"><div class="n" data-count="2" data-decimals="0">0</div><div class="l">Leadership<br>Roles</div></div>
+      </div>
+
+      <div class="discipline-tabs" id="discTabs">
+        <button data-disc="concrete" style="--dcolor:var(--concrete)"><span class="dot"></span>Concrete</button>
+        <button data-disc="steel" style="--dcolor:var(--steel)"><span class="dot"></span>Steel</button>
+        <button data-disc="soil" style="--dcolor:var(--soil)"><span class="dot"></span>Soil</button>
+        <button data-disc="flow" style="--dcolor:var(--flow)"><span class="dot"></span>Flow</button>
+        <button data-disc="code" style="--dcolor:var(--code)"><span class="dot"></span>Code</button>
+      </div>
+      <div class="discipline-desc" id="discDesc">Select a discipline to scope the sheet set.</div>
+    </div>
+
+    <div class="hero-right">
+      <div class="title-block">
+        <div class="tb-head"><span>Title Block</span><span>S-01 / 06</span></div>
+        <div class="tb-grid">
+          <div class="tb-cell"><div class="k">Discipline</div><div class="v"><span class="hover-underline">Structures &amp; Materials</span><small>Hydraulics · Computation</small></div></div>
+          <div class="tb-cell"><div class="k">Institute</div><div class="v"><span class="hover-underline">IIT Hyderabad</span><small>Indian Institute of Technology</small></div></div>
+          <div class="tb-cell"><div class="k">Class · CGPA</div><div class="v"><span class="hover-underline">2027 · 7.1</span><small>B.Tech, Civil Engineering</small></div></div>
+          <div class="tb-cell"><div class="k">Base</div><div class="v"><span class="hover-underline">Telangana, IN</span><small>Karimnagar · Hyderabad</small></div></div>
+        </div>
+        <div class="tb-foot"><span>Drawn by T. Anudeep</span><span class="rev">Rev A · 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll to review</span><span class="line"></span></div>
+</section>
+
+<!-- ============================================================
+     S-02 — GENERAL NOTES
+     ============================================================ -->
+<section class="sheet" id="s02" data-name="Notes">
+  <div class="sheet-head">
+    <div class="sheet-id"><span class="tag">S-02</span><h2>General <em>Notes</em></h2></div>
+    <div class="sheet-meta"><b>Profile · Education · Leadership</b><br/>Sheet 02 of 06 · <span class="rev">Rev A</span></div>
+  </div>
+
+  <div class="notes">
+    <div class="profile reveal">
+      <p>I am a <strong class="hover-underline">B.Tech Civil Engineering</strong> undergraduate at IIT Hyderabad, with a strong foundation in structural mechanics, construction materials and computational methods. My path is shaped by a curiosity for how things are <mark>designed, built and made to last</mark> — from reinforced concrete frames to sustainable cement blends and 3D-printed models.</p>
+      <p>During a three-month internship at <strong class="hover-underline">Nikko Co., Ltd. in Japan</strong>, I worked on sustainable concrete mix design using GGBS as a high-volume cement replacement, studying flowability and mixer power consumption. On campus I lead student-support and alumni-engagement initiatives, and have built projects in STAAD.Pro, MATLAB image processing, CAD and responsive web design.</p>
+      <div class="pull">"Where the structure meets the signal — drafted, analysed, built."</div>
+      <p>I move comfortably between the drawing board, the laboratory and the code editor — reading standards, running analyses, building prototypes and shipping interfaces. I am open to opportunities across civil engineering and technology, and particularly drawn to <mark>frontend developer</mark> and <mark>software / tech</mark> roles where I can turn ideas into fast, accessible products. Wherever I land, I bring engineering rigour and a habit of building from the ground up.</p>
+    </div>
+
+    <div class="reveal" style="display:flex;flex-direction:column;gap:0">
+      <div class="panel">
+        <div class="ph"><span>EDU</span>Education Register</div>
+        <table class="data">
+          <thead><tr><th>Degree</th><th>Institute</th><th>Year</th><th>Score</th></tr></thead>
+          <tbody>
+            <tr><td>B.Tech — Civil Engineering</td><td>IIT Hyderabad</td><td>2027</td><td><span class="score">7.1 CGPA</span></td></tr>
+            <tr><td>XII — Telangana State Board</td><td>Alphores Junior College</td><td>2023</td><td><span class="score">94.6%</span></td></tr>
+            <tr><td>X — Telangana State Board</td><td>Alphores High School</td><td>2021</td><td><span class="score">10.0 CGPA</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <div class="ph"><span>LEAD</span>Positions of Responsibility</div>
+        <ul class="activities">
+          <li><span class="yr">2024–25</span><div><div class="t hover-underline">Sunshine UG Buddy</div><div class="d">Supported undergraduates across academics, college life and campus culture — a first point of contact for mentees navigating coursework, hostel life and institute resources, fostering peer interaction and belonging.</div></div></li>
+          <li><span class="yr">2025–26</span><div><div class="t hover-underline">Alumni Cell — Ideation &amp; Operations Coordinator</div><div class="d">Coordinated alumni engagement through mentorship programmes, alumni talks and networking sessions; contributed to planning, scheduling and on-ground execution of cell-led events across the year.</div></div></li>
+        </ul>
+      </div>
+
+      <div class="nss-box">
+        <div class="nss-k">NSS</div>
+        <div><div class="nss-t hover-underline">National Service Scheme — Volunteer</div><div class="nss-d">Actively participated in college NSS events promoting community service and social responsibility — contributing to campus-led outreach, environmental and community-welfare initiatives alongside academic and project work.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     S-03 — MIX DESIGN (internship)
+     ============================================================ -->
+<section class="sheet mix" id="s03" data-name="Mix">
+  <div class="sheet-head">
+    <div class="sheet-id"><span class="tag">S-03</span><h2>Mix <em>Design</em></h2></div>
+    <div class="sheet-meta"><b><span class="hover-underline">Nikko Co., Ltd.</span> · Japan</b><br/>May–July 2026 · <span class="rev">Rev A</span></div>
+  </div>
+
+  <div class="mix-intro reveal">
+    <div>
+      <div class="mix-role"><span class="hover-underline">Summer Intern — Concrete &amp; Mixing Research</span> <span class="loc">/ <span class="hover-underline">Nikko Co., Ltd.</span> · Japan</span></div>
+      <h3>Sustainable Concrete Mix Design Using GGBS</h3>
+    </div>
+    <p class="mix-blurb">A 3-month international internship investigating <mark>70% cement replacement with GGBS</mark> — evaluating fresh-concrete flowability and mixer power consumption across loading configurations to assess mixing efficiency and energy use.</p>
+  </div>
+
+  <div class="mixer-banner reveal">
+    <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <line class="il il-thin" x1="20" y1="162" x2="380" y2="162"/>
+      <path class="il" d="M50 162 L50 110 L72 90 L122 90 L122 162 Z"/>
+      <rect class="il il-thin" x="62" y="100" width="42" height="20" rx="2"/>
+      <circle class="il" cx="86" cy="162" r="13"/><circle class="il il-thin" cx="86" cy="162" r="5"/>
+      <ellipse class="il" cx="245" cy="116" rx="92" ry="40"/>
+      <path class="il il-thin" d="M168 100 Q245 88 322 112"/>
+      <path class="il il-thin" d="M174 122 Q245 110 316 130"/>
+      <circle class="il" cx="345" cy="162" r="13"/><circle class="il il-thin" cx="345" cy="162" r="5"/>
+      <line class="il il-thin" x1="158" y1="116" x2="122" y2="116"/>
+    </svg>
+    <div class="mb-text">Transit Mixer · <b>70% GGBS</b> binder<br/>Flowability · Power · Loading trials</div>
+  </div>
+
+  <div class="charts">
+    <div class="chart" data-anim>
+      <div class="ch-head"><span class="ch-title">Cement Replacement</span><span class="ch-tag">Binder</span></div>
+      <svg viewBox="0 0 120 120" class="pie">
+        <circle cx="60" cy="60" r="42" fill="none" stroke="#dde6ee" stroke-width="16"/>
+        <circle class="seg" cx="60" cy="60" r="42" fill="none" stroke="var(--concrete)" stroke-width="16" stroke-dasharray="0 999" transform="rotate(-90 60 60)"/>
+        <circle class="seg fill" cx="60" cy="60" r="42" fill="none" stroke="var(--amber)" stroke-width="16" stroke-dasharray="0 999" transform="rotate(-90 60 60)" style="--len:185"/>
+        <text x="60" y="56" text-anchor="middle" font-family="JetBrains Mono" font-size="16" fill="#0d1b2a">70%</text>
+        <text x="60" y="72" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#5b7388" letter-spacing="1">GGBS</text>
+      </svg>
+      <div class="ch-foot">70% GGBS · 30% OPC <b>by mass</b></div>
+    </div>
+
+    <div class="chart" data-anim>
+      <div class="ch-head"><span class="ch-title">Measured — Flow</span><span class="ch-tag">mm</span></div>
+      <svg viewBox="0 0 200 130" class="bar">
+        <line x1="20" y1="110" x2="190" y2="110" stroke="#c2d0dc"/>
+        <line x1="20" y1="20" x2="20" y2="110" stroke="#c2d0dc"/>
+        <rect x="34" y="50" width="24" height="60" fill="var(--concrete)"/>
+        <rect x="74" y="35" width="24" height="75" fill="var(--soil)"/>
+        <rect x="114" y="28" width="24" height="82" fill="var(--cyan)"/>
+        <rect x="154" y="42" width="24" height="68" fill="var(--amber)"/>
+        <text x="46" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#5b7388">M1</text>
+        <text x="86" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#5b7388">M2</text>
+        <text x="126" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#5b7388">M3</text>
+        <text x="166" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#5b7388">M4</text>
+      </svg>
+      <div class="ch-foot">Fresh-concrete flow · <b>↑ with GGBS</b></div>
+    </div>
+
+    <div class="chart" data-anim>
+      <div class="ch-head"><span class="ch-title">Measured — Power</span><span class="ch-tag">kW</span></div>
+      <svg viewBox="0 0 200 130" class="pline">
+        <line x1="20" y1="110" x2="190" y2="110" stroke="#c2d0dc"/>
+        <line x1="20" y1="20" x2="20" y2="110" stroke="#c2d0dc"/>
+        <path class="line" d="M20,90 L52,72 L84,55 L116,48 L148,40 L190,36" fill="none" stroke="var(--magenta)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle class="pt" cx="20" cy="90" r="2.5" fill="var(--magenta)"/>
+        <circle class="pt" cx="52" cy="72" r="2.5" fill="var(--magenta)"/>
+        <circle class="pt" cx="84" cy="55" r="2.5" fill="var(--magenta)"/>
+        <circle class="pt" cx="116" cy="48" r="2.5" fill="var(--magenta)"/>
+        <circle class="pt" cx="148" cy="40" r="2.5" fill="var(--magenta)"/>
+        <circle class="pt" cx="190" cy="36" r="2.5" fill="var(--magenta)"/>
+        <text x="20" y="124" font-family="JetBrains Mono" font-size="8" fill="#5b7388">0s</text>
+        <text x="180" y="124" font-family="JetBrains Mono" font-size="8" fill="#5b7388">180s</text>
+      </svg>
+      <div class="ch-foot">Mixer power over time · <b>profile logged</b></div>
+    </div>
+
+    <div class="chart" data-anim>
+      <div class="ch-head"><span class="ch-title">Varied — Loading</span><span class="ch-tag">config</span></div>
+      <svg viewBox="0 0 200 130" class="bar">
+        <line x1="20" y1="110" x2="190" y2="110" stroke="#c2d0dc"/>
+        <line x1="20" y1="20" x2="20" y2="110" stroke="#c2d0dc"/>
+        <rect x="34" y="60" width="24" height="50" fill="var(--soil)"/>
+        <rect x="74" y="48" width="24" height="62" fill="var(--soil)" opacity=".8"/>
+        <rect x="114" y="38" width="24" height="72" fill="var(--soil)" opacity=".6"/>
+        <text x="46" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#5b7388">A</text>
+        <text x="86" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#5b7388">B</text>
+        <text x="126" y="124" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#5b7388">C</text>
+      </svg>
+      <div class="ch-foot">Loading configurations · <b>efficiency Δ</b></div>
+    </div>
+  </div>
+
+  <div class="key-facts reveal">
+    <div class="kf"><div class="n" data-count="3">3</div><div class="l">Months · Japan</div></div>
+    <div class="kf"><div class="n" data-count="70" data-suffix="%">70%</div><div class="l">GGBS Replacement</div></div>
+    <div class="kf"><div class="n" data-count="4">4</div><div class="l">Mix Trials</div></div>
+    <div class="kf"><div class="n" data-count="2">2</div><div class="l">Bilingual Research</div></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     S-04 — DRAWING REGISTER (projects)
+     ============================================================ -->
+<section class="sheet" id="s04" data-name="Register">
+  <div class="sheet-head">
+    <div class="sheet-id"><span class="tag">S-04</span><h2>Drawing <em>Register</em></h2></div>
+    <div class="sheet-meta"><b>Selected Work · 05 Sheets</b><br/>FIG 1.1 — FIG 5.1 · <span class="rev">Rev A</span></div>
+  </div>
+
+  <div class="register">
+    <article class="project reveal">
+      <h3 class="p-name">
+        <button class="p-head" type="button" aria-expanded="false">
+          <span class="pnum">01</span>
+          <span class="p-name-text">3D Printed Model — Petronas Twin Towers</span>
+          <span class="p-toggle"><span class="p-toggle-icon" aria-hidden="true"></span></span>
+        </button>
+      </h3>
+      <div class="p-panel" role="region">
+        <div class="p-panel-inner">
+          <div class="p-text">
+            <div class="ptype">CAD Modelling · Digital Fabrication · <span class="tools">Solid Edge · Cura</span></div>
+            <div class="p-body">
+        <p>Designed a detailed 3D model of the Petronas Twin Towers in Solid Edge CAD, capturing the setbacks and sky-bridge geometry at a workable part scale.</p>
+        <p>Prepared the model for 3D printing in Cura, optimising support structures and material usage; delivered a scale-accurate miniature across the full CAD-to-print workflow, including post-processing.</p>
+      </div>
+          </div>
+          <div class="p-fig">
+        <span class="figcall">FIG 1.1</span>
+        <div class="figwrap" data-tilt>
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+            <line class="il" x1="34" y1="184" x2="366" y2="184"/>
+            <line class="il il-thin" x1="42" y1="184" x2="50" y2="192"/>
+            <line class="il il-thin" x1="350" y1="184" x2="358" y2="192"/>
+            <path class="il" d="M130 184 L133 150 L136 110 L139 70 L150 58 L161 70 L164 110 L167 150 L170 184 Z"/>
+            <line class="il" x1="150" y1="58" x2="150" y2="26"/>
+            <path class="il il-thin" d="M146 58 L154 58 L150 50 Z"/>
+            <path class="il" d="M230 184 L233 150 L236 110 L239 70 L250 58 L261 70 L264 110 L267 150 L270 184 Z"/>
+            <line class="il" x1="250" y1="58" x2="250" y2="26"/>
+            <path class="il il-thin" d="M246 58 L254 58 L250 50 Z"/>
+            <line class="il" x1="164" y1="98" x2="236" y2="98"/>
+            <line class="il" x1="164" y1="106" x2="236" y2="106"/>
+            <line class="il il-thin" x1="185" y1="98" x2="185" y2="106"/>
+            <line class="il il-thin" x1="200" y1="98" x2="200" y2="106"/>
+            <line class="il il-thin" x1="215" y1="98" x2="215" y2="106"/>
+            <line class="il il-thin" x1="131" y1="176" x2="169" y2="176"/>
+            <line class="il il-thin" x1="133" y1="160" x2="167" y2="160"/>
+            <line class="il il-thin" x1="135" y1="126" x2="165" y2="126"/>
+            <line class="il il-thin" x1="138" y1="84" x2="162" y2="84"/>
+            <line class="il il-thin" x1="231" y1="176" x2="269" y2="176"/>
+            <line class="il il-thin" x1="233" y1="160" x2="267" y2="160"/>
+            <line class="il il-thin" x1="235" y1="126" x2="265" y2="126"/>
+            <line class="il il-thin" x1="238" y1="84" x2="262" y2="84"/>
+            <g transform="translate(54,38)">
+              <rect class="il il-thin" x="-9" y="-9" width="18" height="18"/>
+              <rect class="il il-thin" x="-9" y="-9" width="18" height="18" transform="rotate(45)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <h3 class="p-name">
+        <button class="p-head" type="button" aria-expanded="false">
+          <span class="pnum">02</span>
+          <span class="p-name-text">STAAD.Pro-Based RC Building Design</span>
+          <span class="p-toggle"><span class="p-toggle-icon" aria-hidden="true"></span></span>
+        </button>
+      </h3>
+      <div class="p-panel" role="region">
+        <div class="p-panel-inner">
+          <div class="p-text">
+            <div class="ptype">Structural Analysis · RC Design · <span class="tools">STAAD.Pro · IS 456 · SP 34</span></div>
+            <div class="p-body">
+        <p>Modelled and analysed a multi-span reinforced concrete frame in STAAD.Pro under gravity loading and load combinations, examining member forces and critical load paths.</p>
+        <p>Designed one-way slab, three-span beam and columns for flexure, shear and combined axial load–moment effects, with reinforcement detailing per <strong>IS 456</strong> and <strong>SP 34</strong>.</p>
+      </div>
+          </div>
+          <div class="p-fig">
+        <span class="figcall">FIG 2.1</span>
+        <div class="figwrap" data-tilt>
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+            <line class="il il-thin" x1="80" y1="30" x2="320" y2="30"/>
+            <g class="il il-thin">
+              <line x1="100" y1="30" x2="100" y2="42"/><path d="M96 39 L100 43 L104 39" fill="none"/>
+              <line x1="160" y1="30" x2="160" y2="42"/><path d="M156 39 L160 43 L164 39" fill="none"/>
+              <line x1="220" y1="30" x2="220" y2="42"/><path d="M216 39 L220 43 L224 39" fill="none"/>
+              <line x1="280" y1="30" x2="280" y2="42"/><path d="M276 39 L280 43 L284 39" fill="none"/>
+            </g>
+            <line class="il" x1="80" y1="46" x2="80" y2="166"/>
+            <line class="il" x1="160" y1="46" x2="160" y2="166"/>
+            <line class="il" x1="240" y1="46" x2="240" y2="166"/>
+            <line class="il" x1="320" y1="46" x2="320" y2="166"/>
+            <line class="il" x1="80" y1="46" x2="320" y2="46"/>
+            <line class="il" x1="80" y1="106" x2="320" y2="106"/>
+            <line class="il" x1="80" y1="166" x2="320" y2="166"/>
+            <circle class="il-fill" cx="80" cy="46" r="2.4"/>
+            <circle class="il-fill" cx="160" cy="46" r="2.4"/>
+            <circle class="il-fill" cx="240" cy="46" r="2.4"/>
+            <circle class="il-fill" cx="320" cy="46" r="2.4"/>
+            <circle class="il-fill" cx="80" cy="166" r="2.4"/>
+            <circle class="il-fill" cx="160" cy="166" r="2.4"/>
+            <circle class="il-fill" cx="240" cy="166" r="2.4"/>
+            <circle class="il-fill" cx="320" cy="166" r="2.4"/>
+            <path class="il il-thin" d="M160 106 Q200 130 240 106"/>
+            <line class="il il-thin" x1="320" y1="104" x2="338" y2="104"/>
+            <rect class="il" x="338" y="92" width="24" height="24"/>
+            <rect class="il il-thin" x="343" y="97" width="14" height="14"/>
+            <circle class="il-fill" cx="343" cy="97" r="1.8"/>
+            <circle class="il-fill" cx="357" cy="97" r="1.8"/>
+            <circle class="il-fill" cx="343" cy="111" r="1.8"/>
+            <circle class="il-fill" cx="357" cy="111" r="1.8"/>
+            <line class="il" x1="54" y1="172" x2="346" y2="172"/>
+            <rect class="il il-thin" x="74" y="172" width="12" height="6"/>
+            <rect class="il il-thin" x="154" y="172" width="12" height="6"/>
+            <rect class="il il-thin" x="234" y="172" width="12" height="6"/>
+            <rect class="il il-thin" x="314" y="172" width="12" height="6"/>
+          </svg>
+        </div>
+      </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <h3 class="p-name">
+        <button class="p-head" type="button" aria-expanded="false">
+          <span class="pnum">03</span>
+          <span class="p-name-text">Sediment Kinematics in Supercritical Flows</span>
+          <span class="p-toggle"><span class="p-toggle-icon" aria-hidden="true"></span></span>
+        </button>
+      </h3>
+      <div class="p-panel" role="region">
+        <div class="p-panel-inner">
+          <div class="p-text">
+            <div class="ptype">Mini Project · Hydraulics &amp; Imaging · <span class="tools">MATLAB · Image Processing</span></div>
+            <div class="p-body">
+        <p>Developed a MATLAB image-processing system to track sediment particle movement in supercritical flows (Fr &gt; 1), converting frame sequences into particle trajectories.</p>
+        <p>Analysed the effect of particle size and discharge on sediment velocity and flow behaviour, evaluating transport characteristics through particle tracking and data analysis.</p>
+      </div>
+          </div>
+          <div class="p-fig">
+        <span class="figcall">FIG 3.1</span>
+        <div class="figwrap" data-tilt>
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+            <line class="il" x1="20" y1="70" x2="380" y2="70"/>
+            <line class="il" x1="20" y1="160" x2="380" y2="160"/>
+            <path class="il il-thin" d="M20 90 Q60 84 100 90 T180 90 T260 90 T340 90 T380 90"/>
+            <path class="il il-thin" d="M20 105 Q60 99 100 105 T180 105 T260 105 T340 105 T380 105"/>
+            <g class="drift">
+              <circle class="il-fill" cx="60" cy="122" r="4"/><circle class="il-fill" cx="95" cy="135" r="3"/><circle class="il-fill" cx="130" cy="118" r="5"/><circle class="il-fill" cx="168" cy="140" r="3.5"/><circle class="il-fill" cx="206" cy="124" r="4.5"/><circle class="il-fill" cx="242" cy="138" r="3"/><circle class="il-fill" cx="278" cy="120" r="5"/><circle class="il-fill" cx="314" cy="133" r="3.5"/><circle class="il-fill" cx="350" cy="122" r="4"/>
+            </g>
+            <line class="il" x1="316" y1="48" x2="378" y2="48"/>
+            <path class="il" d="M368 42 L378 48 L368 54 Z"/>
+          </svg>
+        </div>
+      </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <h3 class="p-name">
+        <button class="p-head" type="button" aria-expanded="false">
+          <span class="pnum">04</span>
+          <span class="p-name-text">Responsive Web Design</span>
+          <span class="p-toggle"><span class="p-toggle-icon" aria-hidden="true"></span></span>
+        </button>
+      </h3>
+      <div class="p-panel" role="region">
+        <div class="p-panel-inner">
+          <div class="p-text">
+            <div class="ptype">Front-End · UI / UX · <span class="tools">HTML · CSS</span></div>
+            <div class="p-body">
+        <p>Developed a responsive, mobile-friendly website using HTML and CSS with structured layouts and intuitive navigation that adapts across screen sizes.</p>
+        <p>Implemented custom styling, typography, colour schemes and icons; optimised layout, visual hierarchy and accessibility for readability and user experience.</p>
+      </div>
+          </div>
+          <div class="p-fig">
+        <span class="figcall">FIG 4.1</span>
+        <div class="figwrap" data-tilt>
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+            <rect class="il" x="40" y="40" width="170" height="110" rx="4"/>
+            <line class="il" x1="125" y1="150" x2="125" y2="168"/><line class="il" x1="100" y1="168" x2="150" y2="168"/>
+            <line class="il il-thin" x1="55" y1="58" x2="120" y2="58"/>
+            <rect class="il il-thin" x="55" y="68" width="58" height="30"/>
+            <line class="il il-thin" x1="125" y1="68" x2="195" y2="68"/><line class="il il-thin" x1="125" y1="78" x2="190" y2="78"/><line class="il il-thin" x1="125" y1="88" x2="195" y2="88"/>
+            <line class="il il-thin" x1="55" y1="110" x2="195" y2="110"/><line class="il il-thin" x1="55" y1="120" x2="180" y2="120"/><line class="il il-thin" x1="55" y1="130" x2="195" y2="130"/>
+            <rect class="il" x="235" y="55" width="70" height="95" rx="6"/>
+            <line class="il il-thin" x1="245" y1="70" x2="295" y2="70"/><line class="il il-thin" x1="245" y1="80" x2="290" y2="80"/>
+            <rect class="il il-thin" x="245" y="90" width="50" height="30"/>
+            <rect class="il" x="325" y="60" width="40" height="80" rx="5"/>
+            <line class="il il-thin" x1="332" y1="72" x2="358" y2="72"/><line class="il il-thin" x1="332" y1="80" x2="355" y2="80"/>
+            <rect class="il il-thin" x="332" y="88" width="26" height="20"/>
+          </svg>
+        </div>
+      </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <h3 class="p-name">
+        <button class="p-head" type="button" aria-expanded="false">
+          <span class="pnum">05</span>
+          <span class="p-name-text">High-Speed Maglev Operations — Analysis</span>
+          <span class="p-toggle"><span class="p-toggle-icon" aria-hidden="true"></span></span>
+        </button>
+      </h3>
+      <div class="p-panel" role="region">
+        <div class="p-panel-inner">
+          <div class="p-text">
+            <div class="ptype">Literature Review · Dynamics &amp; Control · <span class="tools">IAAFT · TimeGAN</span></div>
+            <div class="p-body">
+        <p>Analysed track irregularities, electromagnetic instability and coupled vibrations affecting high-speed maglev operations, mapping interactions between vehicle dynamics, guideway response and control systems.</p>
+        <p>Reviewed <strong>IAAFT</strong> and <strong>TimeGAN</strong>-based modelling approaches for simulating track irregularities and predicting vibration behaviour at high operating speeds.</p>
+      </div>
+          </div>
+          <div class="p-fig">
+        <span class="figcall">FIG 5.1</span>
+        <div class="figwrap" data-tilt>
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+            <line class="il il-thin" x1="30" y1="96" x2="70" y2="96"/>
+            <line class="il il-thin" x1="20" y1="110" x2="65" y2="110"/>
+            <line class="il il-thin" x1="35" y1="124" x2="72" y2="124"/>
+            <path class="il" d="M80 150 L80 105 Q92 80 132 78 L300 78 Q332 78 336 96 L336 150 Z"/>
+            <path class="il il-thin" d="M80 105 Q96 92 132 90"/>
+            <rect class="il il-thin" x="100" y="96" width="20" height="14" rx="2"/><rect class="il il-thin" x="128" y="96" width="22" height="14" rx="2"/><rect class="il il-thin" x="158" y="96" width="22" height="14" rx="2"/><rect class="il il-thin" x="188" y="96" width="22" height="14" rx="2"/><rect class="il il-thin" x="218" y="96" width="22" height="14" rx="2"/><rect class="il il-thin" x="248" y="96" width="22" height="14" rx="2"/><rect class="il il-thin" x="278" y="96" width="22" height="14" rx="2"/>
+            <line class="il il-thin" x1="155" y1="78" x2="155" y2="150"/>
+            <line class="il il-thin" x1="245" y1="78" x2="245" y2="150"/>
+            <line class="il" x1="40" y1="170" x2="370" y2="170"/>
+            <g class="pulse">
+              <path class="il il-thin" d="M100 154 Q110 162 120 154 Q130 162 140 154 Q150 162 160 154"/>
+              <path class="il il-thin" d="M180 154 Q190 162 200 154 Q210 162 220 154 Q230 162 240 154"/>
+              <path class="il il-thin" d="M260 154 Q270 162 280 154 Q290 162 300 154 Q310 162 320 154"/>
+            </g>
+            <line class="il il-thin" x1="90" y1="170" x2="90" y2="186"/>
+            <line class="il il-thin" x1="200" y1="170" x2="200" y2="186"/>
+            <line class="il il-thin" x1="310" y1="170" x2="310" y2="186"/>
+          </svg>
+        </div>
+      </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     S-05 — LEGEND
+     ============================================================ -->
+<section class="sheet" id="s05" data-name="Legend">
+  <div class="sheet-head">
+    <div class="sheet-id"><span class="tag">S-05</span><h2>The <em>Legend</em></h2></div>
+    <div class="sheet-meta"><b>Skills &amp; Coursework</b><br/>Key · Index · <span class="rev">Rev A</span></div>
+  </div>
+
+  <div class="legend-grid stagger reveal">
+    <div class="legend-card" style="--c:var(--code)"><div class="lc-head"><span class="swatch"></span><h4>Programming</h4><span class="ct">03</span></div><ul>
+      <li><b>C / C++</b></li><li><b>Java</b></li><li><b>MySQL</b></li>
+    </ul></div>
+    <div class="legend-card" style="--c:var(--steel)"><div class="lc-head"><span class="swatch"></span><h4>Web &amp; Analysis</h4><span class="ct">07</span></div><ul>
+      <li><b>HTML</b></li><li><b>CSS</b></li><li><b>STAAD.Pro</b></li><li><b>Solid Edge</b></li><li><b>MATLAB</b></li><li><b>QGIS</b></li><li>MS Excel</li>
+    </ul></div>
+    <div class="legend-card" style="--c:var(--amber)"><div class="lc-head"><span class="swatch"></span><h4>Workflow</h4><span class="ct">03</span></div><ul>
+      <li><b>Git</b></li><li><b>Cura</b> (3D printing)</li><li>Digital Fabrication</li>
+    </ul></div>
+    <div class="legend-card" style="--c:var(--flow)"><div class="lc-head"><span class="swatch"></span><h4>Languages &amp; Soft Skills</h4><span class="ct">07</span></div><ul>
+      <li><b>Telugu</b> · native</li><li><b>English</b> · professional</li><li><b>Hindi</b> · conversational</li><li>Communication</li><li>Problem Solving</li><li>Project Planning</li><li>Team Coordination</li>
+    </ul></div>
+  </div>
+
+  <div class="coursework reveal">
+    <h3><span class="cw-bar"></span>Relevant Coursework · 26 courses</h3>
+    <div class="groups">
+      <div class="group">
+        <h5>Core Civil <small>17</small></h5>
+        <div class="chips">
+          <span class="chip">Engineering Mechanics</span>
+          <span class="chip">Mechanics of Solids &amp; Structures</span>
+          <span class="chip">Structural Analysis</span>
+          <span class="chip">Reinforced Concrete Design</span>
+          <span class="chip">Structural Steel Design</span>
+          <span class="chip">Foundation Engineering</span>
+          <span class="chip">Construction Materials &amp; Management</span>
+          <span class="chip">Surveying</span>
+          <span class="chip">Fluid Mechanics</span>
+          <span class="chip">Geotechnical Engineering</span>
+          <span class="chip">Environmental Engineering</span>
+          <span class="chip">Transportation Engineering</span>
+          <span class="chip">Water Resource Engineering</span>
+          <span class="chip">GIS &amp; Remote Sensing</span>
+          <span class="chip">Sustainability in Civil Eng.</span>
+          <span class="chip">Thermodynamics</span>
+          <span class="chip">Digital Fabrication</span>
+        </div>
+      </div>
+      <div class="group">
+        <h5>Mathematics <small>07</small></h5>
+        <div class="chips">
+          <span class="chip">Calculus</span>
+          <span class="chip">Differential Equations</span>
+          <span class="chip">Linear Algebra</span>
+          <span class="chip">Complex Variables</span>
+          <span class="chip">Transform Techniques</span>
+          <span class="chip">Probability</span>
+          <span class="chip">Statistics</span>
+        </div>
+      </div>
+      <div class="group">
+        <h5>Computing &amp; AI <small>02</small></h5>
+        <div class="chips">
+          <span class="chip">Intro to Programming</span>
+          <span class="chip">Intro to AI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     S-06 — APPROVALS (contact)
+     ============================================================ -->
+<section class="sheet" id="s06" data-name="Approvals">
+  <div class="sheet-head">
+    <div class="sheet-id"><span class="tag">S-06</span><h2>Approvals &amp; <em>Sign-Off</em></h2></div>
+    <div class="sheet-meta"><b>Sheet 06 of 06</b><br/>Scale 1:1 · <span class="rev">Rev A · 2026</span></div>
+  </div>
+
+  <div class="approve reveal">
+    <div class="ap-tag">Available Now</div>
+    <h2>Let's build something <em>people use.</em></h2>
+    <p class="invite">Open to full-time roles across frontend development, software and beyond — bringing engineering rigour to fast, well-built products, research collaborations and structural engineering conversations.</p>
+
+    <div class="icon-tiles">
+      <a class="icon-tile" href="mailto:ce23btech11054@iith.ac.in" aria-label="Email — ce23btech11054@iith.ac.in">
+        <svg class="ai-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span class="ai-label">ce23btech11054@iith.ac.in</span>
+      </a>
+      <a class="icon-tile" href="tel:+919676839039" aria-label="Phone — +91 96768 39039">
+        <svg class="ai-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="ai-label">+91 96768 39039</span>
+      </a>
+      <a class="icon-tile" href="https://github.com/Anudeep66559" target="_blank" rel="noopener" aria-label="GitHub — github.com/Anudeep66559">
+        <svg class="ai-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <span class="ai-label">github.com/Anudeep66559</span>
+      </a>
+      <a class="icon-tile" href="https://www.linkedin.com/in/anudeep-thatipally-6803b1289" target="_blank" rel="noopener" aria-label="LinkedIn — anudeep-thatipally-6803b1289">
+        <svg class="ai-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+        <span class="ai-label">linkedin.com/in/anudeep-thatipally-6803b1289</span>
+      </a>
+    </div>
+
+    <a class="doc-link magnetic" href="https://onedrive.live.com/?id=%2Fpersonal%2F0595053a161a11a8%2FDocuments%2FDesktop%2FPlacement%2FAnudeep%5FCe23btech11054%2Epdf&listurl=%2Fpersonal%2F0595053a161a11a8%2FDocuments&ithint=file%2Cpdf&e=HGLlqp&migratedtospo=true&parent=%2Fpersonal%2F0595053a161a11a8%2FDocuments%2FDesktop%2FPlacement&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy8wNTk1MDUzYTE2MWExMWE4L0lRRDJDNVZSZXZ0RFJwNW5NS3NiNnYxYkFZTFVMRTFPOUdRa1B1NlBBUks2RTQ4P2U9SEdMbHFw&ga=1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+        <path d="M14 3v5h5"/><path d="M9 13h6M9 16h4"/>
+      </svg>
+      <span>Anudeep_Thatipally_Resume.pdf</span>
+      <span style="color:var(--ink-faint)">click to open</span>
+    </a>
+
+    <div class="sign-block">
+      <div class="sc"><div class="k">Project</div><div class="v">Portfolio</div></div>
+      <div class="sc"><div class="k">Drawn by</div><div class="v">T. Anudeep</div></div>
+      <div class="sc"><div class="k">Scale · Date</div><div class="v">1:1 · 2026</div></div>
+      <div class="sc"><div class="k">Sheet</div><div class="v rev">S-06 / 06</div></div>
+    </div>
+
+    <div class="footer">
+      <span>© 2026 Thatipally Anudeep · IIT Hyderabad · Telangana, IN</span>
+      <span class="credits">Set in <a href="https://fonts.google.com/specimen/Big+Shoulders+Display" target="_blank" rel="noopener">Big Shoulders</a>, <a href="https://www.fontshare.com/fonts/host-grotesk" target="_blank" rel="noopener">Host Grotesk</a> &amp; <a href="https://fonts.google.com/specimen/JetBrains+Mono" target="_blank" rel="noopener">JetBrains Mono</a></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="veil"></div>
+
+<div id="projCursor" class="proj-cursor" aria-hidden="true">
+  <div class="pc-bar"><span class="pc-fill"></span></div>
+  <div class="pc-stage">
+    <div class="pc-grid"></div>
+    <div class="pc-img"></div>
+    <div class="pc-scan"></div>
+  </div>
+  <div class="pc-label"><span class="pc-fig">FIG</span><span class="pc-name">Project</span></div>
+</div>
+
+<script type="module" src="/script.js"></script>
+</body>
+</html>
