@@ -16,7 +16,7 @@ if (existsSync(out)) {
 
 await mkdir(out, { recursive: true });
 
-const filesToCopy = ["index.html", "styles.css"];
+const filesToCopy = ["index.html", "styles.css", "logo.svg", "favicon.svg"];
 for (const f of filesToCopy) {
   await copyFile(join(root, f), join(out, f));
   console.log(`copied ${f} -> public/${f}`);

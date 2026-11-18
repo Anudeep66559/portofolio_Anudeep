@@ -139,7 +139,9 @@ body.hovering .scope-cross{background:var(--flow)}
   pointer-events:none;
 }
 .hud > *{pointer-events:auto}
-.hud .brand{color:var(--ink);font-weight:500;letter-spacing:.2em}
+.hud .brand{color:var(--ink);font-weight:500;letter-spacing:.2em;display:flex;align-items:center;gap:9px}
+.hud .brand-logo{display:block;width:22px;height:22px;flex:0 0 auto;transition:transform .35s var(--ease)}
+.hud .brand:hover .brand-logo{transform:rotate(-4deg) scale(1.06)}
 .hud .brand b{color:var(--accent)}
 .hud .sep{color:var(--ink-faint)}
 .hud .right{margin-left:auto;display:flex;gap:18px;align-items:center}
